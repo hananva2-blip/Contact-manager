@@ -1,0 +1,6 @@
+{
+  "name": "Nexus Contacts - Zero-Dependency Contact Manager",
+  "description": "A fast, lightweight Contact Management web app built with pure Vanilla JavaScript (ES6+), HTML5, and Tailwind CSS. Features full CRUD, localStorage persistence, live search, tag filtering, dark/light theme, and JSON import/export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

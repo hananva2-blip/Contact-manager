@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus Contacts - Zero-Dependency Contact Manager</title>
+    <meta name="description" content="A fast, lightweight Contact Management web app built with pure Vanilla JavaScript (ES6+), HTML5, and Tailwind CSS. Features full CRUD, localStorage persistence, live search, tag filtering, dark/light theme, and JSON import/export." />
+    <meta property="og:title" content="Nexus Contacts - Zero-Dependency Contact Manager" />
+    <meta property="og:description" content="A fast, lightweight Contact Management web app built with pure Vanilla JavaScript (ES6+), HTML5, and Tailwind CSS. Features full CRUD, localStorage persistence, live search, tag filtering, dark/light theme, and JSON import/export." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS (via CDN as requested) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      }
+      /* Custom subtle scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(156, 163, 175, 0.4);
+        border-radius: 9999px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(156, 163, 175, 0.6);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-950 min-h-screen text-slate-800 dark:text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+
